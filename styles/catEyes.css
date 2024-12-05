@@ -1,0 +1,111 @@
+/*
+* {
+  margin: 0;
+}
+
+.cat-container {
+  position: relative;
+  display: grid;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.eyes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-eye ,
+.right-eye {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: rgb(255, 174, 0);
+}
+
+.eye-lid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-lid, 
+.right-lid {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  background-color: black;
+}
+*/
+
+body {
+  background-color: black;
+}
+
+@keyframes blink {
+  0% {
+    transform: translateY(-3%);
+  }
+  14.28% { /* Halfway through the 2-second active animation */
+    transform: translateY(+100%);
+  }
+  28.57% { /* End of the 2-second active animation */
+    transform: translateY(-3%);
+  }
+  100% { /* Static during the remaining 5 seconds */
+    transform: translateY(-3%);
+  }
+}
+
+
+.cat-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.eyes-container {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  column-gap: 3.5rem;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  position: relative;
+}
+
+.eye {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: rgb(255, 174, 0);
+}
+
+.eye-lid-container {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  column-gap: 2.5rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 11rem;
+  left: 0;
+  animation: blink 7s infinite ease-in-out;
+  animation-play-state: running;
+  z-index: 2;
+}
+
+.lid {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  background-color: black;
+}

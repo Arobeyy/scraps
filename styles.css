@@ -52,11 +52,6 @@ img[src] {
   50% { border-color: rgb(124, 172, 124); }
 }
 
-@keyframes blink {
-  
-}
-
-
 .img-table {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
