@@ -27,17 +27,4 @@ document.addEventListener('mousemove', () => {
   },2000);  //3 second delay 
 });
 
-let mouseTimeoutP;
-
-document.addEventListener('mousemove', () => {
-  animatedPupil.classList.add('animate');
-  animatedPupilContainer.classList.add('animate');
-
-  clearTimeout(mouseTimeoutP);
-
-  mouseTimeoutP = setTimeout(() => {
-    animatedPupil.classList.remove('animate');
-    animatedPupilContainer.classList.remove('animate');
-  }, 30000);
-});
 
