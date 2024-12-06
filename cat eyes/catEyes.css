@@ -14,16 +14,16 @@ body {
 }
 
 /* Horizontal pupil movement */
-@keyframes focus1 {
+@keyframes movement {
   0% { transform: translateX(0); }
-  15% { transform: translateX(+3%); }
-  25% { transform: translateX(-5%); }
+  15% { transform: translateX(+4%); }
+  25% { transform: translateX(-7%); }
   35% { transform: translateX(0); }
   100% { transform: translateX(0); } /* Static at the end */
 }
 
 /* Pupil scaling animation */
-@keyframes focus2 {
+@keyframes focus {
   0% { transform: scale(1); }
   15% { transform: scale(1.1); }
   35% { transform: scale(1); }
@@ -40,8 +40,8 @@ body {
   height: 100vh;
 }
 
-/* Eyes container */
-.eyes-container {
+/* Eyes and nose container */
+.eyes-nose-container {
   display: grid;
   grid-template-columns: 10rem 10rem; /* Two eyes side by side */
   column-gap: 3.5rem;
@@ -60,6 +60,14 @@ body {
   background-color: rgb(255, 174, 0); /* Eye color */
 }
 
+/* Eyelid shape */
+.lid {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  background-color: black; /* Matches body background */
+}
+
 /* Eyelid animation container */
 .eye-lid-container {
   display: grid;
@@ -73,14 +81,6 @@ body {
   z-index: 2; /* Ensures eyelids are above pupils */
 }
 
-/* Eyelid shape */
-.lid {
-  height: 11rem;
-  width: 11rem;
-  border-radius: 50%;
-  background-color: black; /* Matches body background */
-}
-
 /* Pupil container for movement */
 .pupil-container {
   display: grid;
@@ -90,7 +90,7 @@ body {
   position: absolute;
   left: 1.9rem; /* Adjusts starting position */
   top: 0.7rem;
-  animation: focus1 30s infinite ease-in-out; /* Horizontal movement */
+  animation: movement 30s infinite ease-in-out; /* Horizontal movement */
 }
 
 /* Pupil styling */
@@ -99,7 +99,7 @@ body {
   width: 6rem;
   border-radius: 50%;
   background-color: black; /* Pupil color */
-  animation: focus2 10s infinite ease-in-out; /* Scaling effect */
+  animation: focus 10s infinite ease-in-out; /* Scaling effect */
 }
 
 /* Highlights */
@@ -108,9 +108,9 @@ body {
 .highlight {
   display: grid;
   grid-template-columns: 3rem 3rem;
-  column-gap: 10rem;
+  column-gap: 10.3rem;
   position: absolute;
-  left: 4rem; /* Position relative to eyes */
+  left: 3.7rem; /* Position relative to eyes */
 }
 
 /* Main highlight */
@@ -125,7 +125,7 @@ body {
 .small-highlight {
   display: grid;
   grid-template-columns: 3rem 3rem;
-  column-gap: 10rem;
+  column-gap: 10.3rem;
   position: absolute;
   left: 4.8rem;
   top: 1.1rem;
