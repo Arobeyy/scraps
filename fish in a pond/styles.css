@@ -32,6 +32,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .top-wave {
@@ -158,4 +163,15 @@ body {
 @keyframes typing {
   from { width: 0 }
   to { width: 25rem }
+}
+
+.about {
+  max-width: 50rem;
+  margin-top: 10rem;
+}
+
+.text-type-2 {
+  color: white;
+  font-size: 2rem;
+  animation: typing 2s ease-in;
 }
