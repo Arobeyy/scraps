@@ -4,7 +4,7 @@
 
 #hero-section {
   display: grid;
-  height: 70vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -12,12 +12,11 @@
 }
 
 .fish-container {
-  width: 25rem;
-  height: 25rem;
+  width: 40rem;
+  height: 100vh;
   display: grid;
   align-items: center;
   rotate: 180deg;
-  margin-top: 10rem;
 }
 
 .spacer {
@@ -28,6 +27,78 @@
   background-size: cover;
 }
 
+.top-wave {
+  background-image: url(./top-wave.svg);
+}
+
+#fish g {
+  animation: swimCombined 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--order)*50ms);
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes swimCombined {
+  0% {
+    transform: translate(3%, +10%);
+  }
+  10% {
+    transform: translate(+3%, -10%);
+  }
+  20% {
+    transform: translate(-3%, -20%);
+  }
+  30% {
+    transform: translate(+3%, -30%);
+  }
+  40% {
+    transform: translate(-3%, -40%);
+  }
+  50% {
+    transform: translate(+3%, -50%);
+  }
+  60% {
+    transform: translate(-3%, -60%);
+  }
+  70% {
+    transform: translate(+3%, -70%);
+  }
+  80% {
+    transform: translate(-3%, -80%);
+  }
+  90% {
+    transform: translate(+3%, -90%);
+  }
+  100% {
+    transform: translate(-3%, -100%);
+  }
+}
+
 .bottom-wave {
-  background-image: url(./bottom-wave.svg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.bottom-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.bottom-wave .shape-fill {
+  fill: #2214F7;
+}
+
+.bg-circles {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
 }

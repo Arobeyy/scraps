@@ -1,0 +1,10 @@
+<svg id="visual" viewBox="0 0 960 540" width="960" height="540">
+<g id=circles fill="none" stroke="#FFFFFF" stroke-width="4">
+<circle r="74" cx="375" cy="43"></circle>
+<circle r="41" cx="949" cy="128"><circle>
+<circle r="56" cx="586" cy="240"></circle>
+<circle r="47" cx="453" cy="363"></circle>
+<circle r="60" cx="62" cy="396"></circle>
+<circle r="60" cx="817" cy="398"></circle>
+</g>
+</svg>
