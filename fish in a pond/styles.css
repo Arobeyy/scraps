@@ -77,7 +77,7 @@ body {
     opacity: 0.2;
   }
   100% {
-    transform: translate(+3%, -100%);
+    transform: translate(-3%, -100%);
     opacity: 0;
   }
 }
@@ -198,7 +198,7 @@ section {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid white; /* Typing cursor effect */
-  animation: typing 2s steps(30, end) calc(var(--order) * 800ms);
+  animation: typing 2s steps(30, end) calc(var(--order) * 700ms);
   animation-fill-mode: forwards;
   letter-spacing: 0.13em;
   opacity: 0;
