@@ -32,25 +32,25 @@
 
 3. Open the index.html file in your favorite web browser.
 
-## Key CSS Animations
-  -Fish Animation (@keyframes swim): Smooth swimming motion with position changes.
-  -Bubble Animation (@keyframes bubbles): Subtle fade-in and fade-out effects.
-  -Typing Animation (@keyframes typing): Simulates a typing effect for the headline text.
+## 🎨 Key CSS Animations
+  - Fish Animation (@keyframes swim): Smooth swimming motion with position changes.
+  - Bubble Animation (@keyframes bubbles): Subtle fade-in and fade-out effects.
+  - Typing Animation (@keyframes typing): Simulates a typing effect for the headline text.
 
-## To-Do
-  -Add interactivity: Allow users to create ripples or add custom fish.
-  -Expand the scene with more underwater elements (e.g., coral reefs, starfish).
-  -Optimize animations for better performance on low-powered devices.
+## 🌟 To-Do
+  - Add interactivity: Allow users to create ripples or add custom fish.
+  - Expand the scene with more underwater elements (e.g., coral reefs, starfish).
+  - Optimize animations for better performance on low-powered devices.
 
-## Preview 
+## 📷 Preview 
 
 Here’s a sneak peek of the **Fish in a Pond** project:
 
 ![Fish in a Pond Preview](preview.mp4)
 
-## Acknowledgments
-  -Google Fonts for the Poppins font.
-  -Inspiration from the beauty of the ocean and the vast potential it symbolizes.
+## 🙌 Acknowledgments
+  - Google Fonts for the Poppins font.
+  - Inspiration from the beauty of the ocean and the vast potential it symbolizes.
 
-## Feedback
+## 💬 Feedback
   Have suggestions or found a bug? Feel free to open an issue or reach out at [sumiyaakter.arobey@gmail.com].
