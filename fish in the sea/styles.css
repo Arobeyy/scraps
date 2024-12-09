@@ -139,7 +139,7 @@ section {
 }
 
 #fish g {
-  animation: swim 8s ease-in-out infinite;
+  animation: swim 5s ease-in-out infinite;
   animation-delay: calc(var(--order) * 40ms);
 }
 
